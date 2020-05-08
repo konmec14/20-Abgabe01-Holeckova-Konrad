@@ -24,6 +24,12 @@ divided by the number of liquids (ingredients) matches the value 0. It will be t
 3. *Collections* <br />
 ArrayList contains Objects of the Class Liquid (one ingredient is one liquid) <br /> <a/>
 
+**Additional extensions**<br />
+1. *Longdrink Test class*
+This class uses junit 5 tests to test the class Longdrink.java
+2. *SimpleDrink Test class*
+This class uses junit 5 tests to test the class SimpleDrink.java
+
 ##### Important Code Snippet
 This code is part of *Longdrink.java*. Depending on the return value of this
 method the ZeroPercentAlcoholException will be thrown or not.<br />
