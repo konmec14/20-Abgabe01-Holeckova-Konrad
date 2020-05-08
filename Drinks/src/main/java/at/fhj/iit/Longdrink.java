@@ -24,11 +24,15 @@ public class Longdrink extends Drink {
      * @param ingredients liquids that the Longdrink contains
      * @param isCreamy tells, if there is cream inside the longdrink
      */
-    public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients)  {
+    public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients) throws ZeroPercentAlcoholException {
         super(name);
         this.ingredients = ingredients;
         this.isCreamy = isCreamy;
         this.fruitTopping = fruitTopping;
+        
+        if(getAlcoholPercent()==0){
+            throw new ZeroPercentAlcoholException();
+        }
     }
 
     /**
