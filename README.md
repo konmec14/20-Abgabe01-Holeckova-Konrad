@@ -24,10 +24,10 @@ divided by the number of liquids (ingredients) matches the value 0. It will be t
 3. *Collections* <br />
 ArrayList contains Objects of the Class Liquid (one ingredient is one liquid) <br /> <a/>
 
-**Additional extensions**<br />
-1. *Longdrink Test class*
+**Additional extensions:**<br />
+1. *Longdrink Test class*<br />
 This class uses junit 5 tests to test the class Longdrink.java
-2. *SimpleDrink Test class*
+2. *SimpleDrink Test class*<br />
 This class uses junit 5 tests to test the class SimpleDrink.java
 
 ##### Important Code Snippet
