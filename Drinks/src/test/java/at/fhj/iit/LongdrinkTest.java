@@ -42,4 +42,40 @@ public class LongdrinkTest {
         l2 = new Longdrink("Drink2", "Orange", true, ingredients);
         ingredients.clear();
     }
+
+    /**
+     * checks the values of the second longdrink object, using the parameters used for creating them
+     * if they match, then the test will succeed
+     */
+    @Test
+    @DisplayName("Testing constructor Drink 1")
+    public void testConstructorDrinkOne(){
+        ingredients.add(aperol);
+        ingredients.add(water);
+        ingredients.add(wine);
+        assertEquals(l1.isCreamy(), false);
+        assertEquals(l1.getVolume(), 0.625, 0.001);
+        assertEquals(l1.getAlcoholPercent(), 9.333, 0.001);
+        assertEquals(l1.getFruitTopping(), "Pineapple");
+        assertEquals(l1.getIngredients(), ingredients);
+        ingredients.clear();
+    }
+
+    /**
+     * checks the values of the second longdrink object, using the parameters used for creating them
+     * if they match, then the test will succeed
+     */
+    @Test
+    @DisplayName("Testing constructor Drink 2")
+    public void testConstructorDrinkTwo(){
+        ingredients.add(orangeJuice);
+        ingredients.add(water);
+        ingredients.add(wine);
+        assertEquals(l2.isCreamy(), true);
+        assertEquals(l2.getVolume(), 0.725, 0.001);
+        assertEquals(l2.getAlcoholPercent(), 4.333, 0.001);
+        assertEquals(l2.getFruitTopping(), "Orange");
+        assertEquals(l2.getIngredients(), ingredients);
+        ingredients.clear();
+    }
 }
