@@ -44,7 +44,7 @@ public class LongdrinkTest {
     }
 
     /**
-     * checks the values of the second longdrink object, using the parameters used for creating them
+     * checks the values of the first longdrink object, using the parameters used for creating them
      * if they match, then the test will succeed
      */
     @Test
@@ -76,6 +76,56 @@ public class LongdrinkTest {
         assertEquals(l2.getAlcoholPercent(), 4.333, 0.001);
         assertEquals(l2.getFruitTopping(), "Orange");
         assertEquals(l2.getIngredients(), ingredients);
+        ingredients.clear();
+    }
+
+    /**
+     * checks if the setter setCreamy sets the proper value
+     */
+    @Test
+    @DisplayName("Test Creamy setter")
+    public void testCreamySetter(){
+        l1.setCreamy(true);
+        assertEquals(l1.isCreamy(), true);
+    }
+
+    /**
+     * checks if the setter setFruitTopping sets the proper value
+     */
+    @Test
+    @DisplayName("Test FruitTopping setter")
+    public void testFruitToppingSetter(){
+        l1.setFruitTopping("");
+        assertEquals(l1.getFruitTopping(), "");
+    }
+
+    /**
+     * checks if the setter setIngredients sets the proper values for the list
+     */
+    @Test
+    @DisplayName("Test ingredients setter")
+    public void testIngredientsSetter(){
+        ingredients.add(aperol);
+        ingredients.add(water);
+        ingredients.add(wine);
+        ingredients.add(water);
+        l1.setIngredients(ingredients);
+        assertEquals(l1.getIngredients(), ingredients);
+        ingredients.clear();
+    }
+
+    /**
+     * checks if the adder add adds the proper value
+     */
+    @Test
+    @DisplayName("Test ingredients adder")
+    public void testIngredientsAdder(){
+        ingredients.add(aperol);
+        ingredients.add(water);
+        ingredients.add(wine);
+        ingredients.add(water);
+        l1.add(water);
+        assertEquals(l1.getIngredients(), ingredients);
         ingredients.clear();
     }
 }
