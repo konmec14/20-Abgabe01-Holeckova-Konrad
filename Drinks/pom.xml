@@ -15,43 +15,27 @@
 
   <developers>
     <developer>
-      <id>michaelulm</id>
-      <name>Michael Ulm</name>
-      <email>michael.ulm@fh-joanneum.at</email>
+      <id>konmec14</id>
+      <name>Melinda Konrad</name>
+      <email>melinda.konrad@edu.campus02.at</email>
       <url>https://www.michael-ulm.at</url>
-      <organization>FH JOANNEUM GmbH</organization>
-      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
-      <roles>
-        <role>Lecturer</role>
-      </roles>
-      <timezone>Europe/Vienna</timezone>
-      <properties>
-        <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
-      </properties>
-    </developer>
-    <developer>
-      <id>chrishofer</id>
-      <name>Christian Hofer</name>
-      <email>christian.hofer@campus02.at</email>
       <organization>CAMPUS 02 Fachhochschule der Wirtschaft GmbH</organization>
       <organizationUrl>https://www.campus02.at/wirtschaftsinformatik</organizationUrl>
       <roles>
-        <role>Lecturer &amp; Research Scientist</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
     </developer>
     <developer>
-      <id>Rigbin</id>
-      <name>Harald Schwab</name>
-      <email>harald.schwab2@fh-joanneum.at</email>
-      <url>https://github.com/Rigbin</url>
-      <organization>FH JOANNEUM GmbH</organization>
-      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+      <id>lydiaHoly</id>
+      <name>Lydia Holeckova</name>
+      <email>lydia.holeckova@edu.campus02.at</email>
+      <organization>CAMPUS 02 Fachhochschule der Wirtschaft GmbH</organization>
+      <organizationUrl>https://www.campus02.at/wirtschaftsinformatik</organizationUrl>
       <roles>
-        <role>Researcher</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
-      <properties/>
     </developer>
   </developers>
 
