@@ -25,4 +25,28 @@ public class SimpleDrinkTest {
         s1=new SimpleDrink("Cool water", water);
         s2= new SimpleDrink("Cherry shot", cherryLiquer);
     }
+
+    /**
+     * checks the values of the first simpledrink object, using the parameters used for creating them
+     * if they match, then the test will succeed
+     */
+    @Test
+    @DisplayName("Testing constructor simpledrink 1")
+    public void testConstructorNonAlcoholic(){
+        assertEquals(s1.getVolume(), 0.5);
+        assertEquals(s1.getAlcoholPercent(), 0.0, 0.001);
+        assertEquals(s1.isAlcoholic(), false);
+    }
+
+    /**
+     * checks the values of the second simpledrink object, using the parameters used for creating them
+     * if they match, then the test will succeed
+     */
+    @Test
+    @DisplayName("Testing constructor simpledrink 2")
+    public void testConstructorAlcoholic(){
+        assertEquals(s2.getVolume(), 0.1);
+        assertEquals(s2.getAlcoholPercent(), 35.0, 0.001);
+        assertEquals(s2.isAlcoholic(), true);
+    }
 }
