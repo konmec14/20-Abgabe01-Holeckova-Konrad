@@ -12,4 +12,10 @@ The existing java project called "Drinks" will be extended and implemented in ja
 All classes contain getters and setters as well constructors and javadoc.
 Preexisting tests using junit5 are also implemented in LiquidTest.java.
 
-
+**Planned extensions:**
+*Longdrink class*  <br />
+This is a subclass from Drink.java. <br />
+*Exception* <br />
+ZeroPercentAlcoholException <br />
+*Collections* <br />
+List of ingredients <br />
