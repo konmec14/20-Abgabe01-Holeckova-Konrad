@@ -132,6 +132,8 @@ public class LongdrinkTest {
 
     /**
      * checks if ZeroPercentAlcoholException will be thrown if a non alcohol longdrink would be created
+     *
+     * @throws ZeroPercentAlcoholException will be thrown if there is no alcohol in the longdrink
      */
     @Test()
     @DisplayName("Test ZeroPercentAlcoholException")

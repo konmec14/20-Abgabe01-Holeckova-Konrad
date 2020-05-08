@@ -8,7 +8,8 @@ import java.util.ArrayList;
  * cream and has toppings
  * This Class also includes a self made ZeroPercentAlcoholException
  *
- * @authors Melinda Konrad, Lydia Holeckova
+ * @author Melinda Konrad
+ * @author Lydia Holeckova
  */
 public class Longdrink extends Drink {
     private ArrayList<Liquid> ingredients = new ArrayList<Liquid>();
@@ -23,6 +24,7 @@ public class Longdrink extends Drink {
      * @param fruitTopping a fruit on top of the longdrink
      * @param ingredients liquids that the Longdrink contains
      * @param isCreamy tells, if there is cream inside the longdrink
+     * @throws ZeroPercentAlcoholException will be thrown if the alcohol percantage stays at 0
      */
     public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients) throws ZeroPercentAlcoholException {
         super(name);
@@ -130,9 +132,11 @@ public class Longdrink extends Drink {
     /**
      * Sets isCreamy to true or false
      *
-     * @return value of isCreamy
+     * @param creamy of isCreamy
      */
     public void setCreamy(boolean creamy) {
         isCreamy = creamy;
     }
+
+
 }
