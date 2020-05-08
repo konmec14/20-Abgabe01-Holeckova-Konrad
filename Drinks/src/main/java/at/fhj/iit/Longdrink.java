@@ -11,7 +11,6 @@ import java.util.ArrayList;
  * @authors Melinda Konrad, Lydia Holeckova
  */
 public class Longdrink extends Drink {
-
     private ArrayList<Liquid> ingredients = new ArrayList<Liquid>();
     private String fruitTopping;
     private boolean isCreamy = false;
@@ -27,6 +26,9 @@ public class Longdrink extends Drink {
      */
     public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients)  {
         super(name);
+        this.ingredients = ingredients;
+        this.isCreamy = isCreamy;
+        this.fruitTopping = fruitTopping;
     }
 
     /**
@@ -35,6 +37,7 @@ public class Longdrink extends Drink {
      * @param l liquid that will be added to the ingredients
      */
     public void add(Liquid l) {
+        this.ingredients.add(l);
     }
 
     /**
@@ -44,7 +47,11 @@ public class Longdrink extends Drink {
      */
     @Override
     public double getVolume() {
-        return 0;
+        double sum=0;
+        for(int i=0; i<ingredients.size(); i++){
+            sum+=ingredients.get(i).getVolume();
+        }
+        return sum;
     }
 
     /**
@@ -54,7 +61,11 @@ public class Longdrink extends Drink {
      */
     @Override
     public double getAlcoholPercent() {
-        return 0;
+        double sum=0;
+        for(int i=0; i<ingredients.size(); i++) {
+            sum+=ingredients.get(i).getAlcoholPercent();
+        }
+        return sum/ingredients.size();
     }
 
     /**
@@ -120,5 +131,4 @@ public class Longdrink extends Drink {
     public void setCreamy(boolean creamy) {
         isCreamy = creamy;
     }
-
 }
