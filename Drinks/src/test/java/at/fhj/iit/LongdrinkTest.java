@@ -2,6 +2,7 @@ package at.fhj.iit;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -126,6 +127,19 @@ public class LongdrinkTest {
         ingredients.add(water);
         l1.add(water);
         assertEquals(l1.getIngredients(), ingredients);
+        ingredients.clear();
+    }
+
+    /**
+     * checks if ZeroPercentAlcoholException will be thrown if a non alcohol longdrink would be created
+     */
+    @Test()
+    @DisplayName("Test ZeroPercentAlcoholException")
+    public void testZeroPercentAlcoholException() throws ZeroPercentAlcoholException {
+        ingredients.add(orangeJuice);
+        ingredients.add(water);
+        Assertions.assertThrows(ZeroPercentAlcoholException.class,
+                () -> l3 = new Longdrink("Drink3", "Cherry", true, ingredients));
         ingredients.clear();
     }
 }
