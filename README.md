@@ -1,4 +1,4 @@
-# 20-Aufgabe01-Holeckova-Konrad
+# 20-Abgabe01-Holeckova-Konrad
 This repository includes the first project to be implemented for the System Configuration Management exercise.
 
 In this project the purpose is to get to know git, maven, javadoc and unit testing.
