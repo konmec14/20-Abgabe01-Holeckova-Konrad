@@ -31,7 +31,20 @@ This class uses junit 5 tests to test the class Longdrink.java
 This class uses junit 5 tests to test the class SimpleDrink.java
 
 ##### Important Code Snippet
-This code is part of *Longdrink.java*. Depending on the return value of this
+The following code snippet shows the constructor of *Longdrink.java* where an Exception concerning the alcohol percentage could be thrown using the the method getAlcoholPercent.  
+```java
+public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients) throws ZeroPercentAlcoholException {
+    super(name);
+    this.ingredients = ingredients;
+    this.isCreamy = isCreamy;
+    this.fruitTopping = fruitTopping;
+      
+    if(getAlcoholPercent()==0){
+        throw new ZeroPercentAlcoholException();
+    }
+}
+```
+Depending on the return value of the following
 method the ZeroPercentAlcoholException will be thrown or not.<br />
 If the returned value is 0.0 the exception will be triggered in the constructor-
 because a non alcoholic drink is not a longdrink.
@@ -46,3 +59,5 @@ public double getAlcoholPercent() {
     return sum/ingredients.size();
 }
 ```
+
+
