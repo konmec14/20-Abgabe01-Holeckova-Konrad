@@ -30,7 +30,7 @@ This class uses junit 5 tests to test the class Longdrink.java
 2. *SimpleDrink Test class*<br />
 This class uses junit 5 tests to test the class SimpleDrink.java
 
-##### Important Code Snippet
+**Important Code Snippet**<br />
 The following code snippet shows the constructor of *Longdrink.java* where an Exception concerning the alcohol percentage could be thrown using the the method getAlcoholPercent.  
 ```java
 public Longdrink(String name, String fruitTopping, boolean isCreamy, ArrayList<Liquid> ingredients) throws ZeroPercentAlcoholException {
